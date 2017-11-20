@@ -1,0 +1,14 @@
+body {
+  background-color: #0d91d9; }
+
+section {
+  background-color: white;
+  padding: 30px 100px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 12px 21px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 12px 21px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 12px 21px -9px rgba(0, 0, 0, 0.75);
+  font-size: 12px; }
+
+/*# sourceMappingURL=style.css.map */

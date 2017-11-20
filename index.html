@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/bootstrap-switch.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Belgium</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">France</a>
+                            <a href="#" class="dropdown-item">Germany</a>
+                            <a href="#" class="dropdown-item">United Kingdom</a>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                           placeholder="ZIP code, Address">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Belgium</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">France</a>
+                            <a href="#" class="dropdown-item">Germany</a>
+                            <a href="#" class="dropdown-item">United Kingdom</a>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                           placeholder="ZIP code, Address">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <input type="checkbox" name="checkbox" id="number">
+            </div>
+            <div class="col-lg-2">
+                <span>Weight:</span>
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <span class="input-group-addon">Kg</span>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <span>Lenght:</span>
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <span class="input-group-addon">Cm</span>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <span>Width:</span>
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <span class="input-group-addon">Cm</span>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <span>Height:</span>
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <span class="input-group-addon">Cm</span>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </section>
+
+    <div class="section-container">
+        <section class="section">
+            <div class="row">
+                <div class="col-lg-2">
+                    <input type="checkbox" name="checkbox">
+                </div>
+                <div class="col-lg-2">
+                    <span>Number of pallets:</span>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon">Pcs</span>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <span>Height:</span>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon">Cm</span>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <span>Weight for pallet:</span>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon">Kg</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="row">
+                <div class="col-lg-2">
+                    <input type="checkbox" name="checkbox">
+                </div>
+                <div class="col-lg-2">
+                    <span>Number of pallets:</span>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon">Pcs</span>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <span>Height:</span>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon">Cm</span>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <span>Weight for pallet:</span>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon">Kg</span>
+                    </div>
+                </div>
+            </div>
+            <!--<button class="btn" onclick="one()">Send</button>-->
+        </section>
+    </div>
+    <div class="buttons-row">
+        <button type="button" class="btn btn-primary" onclick="deleteElement()">- Remove</button>
+        <button type="button" class="btn btn-primary" onclick="addElement()">+ Add parcel or pallet</button>
+        <button type="button" class="btn btn-danger">Quote & Book</button>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap-switch.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
