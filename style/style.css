@@ -1,14 +1,123 @@
 body {
   background-color: #0d91d9; }
 
-section {
-  background-color: white;
-  padding: 30px 100px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  -webkit-box-shadow: 0 12px 21px -9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 12px 21px -9px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 12px 21px -9px rgba(0, 0, 0, 0.75);
-  font-size: 12px; }
+.wrapper {
+  padding-top: 30px; }
+  .wrapper section {
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 12px 21px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 12px 21px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 12px 21px -9px rgba(0, 0, 0, 0.75);
+    font-size: 12px; }
+    .wrapper section .parcel-property {
+      display: none; }
+    .wrapper section .show {
+      display: block; }
+    .wrapper section .hide {
+      display: none; }
+    .wrapper section .input-group {
+      margin-bottom: 10px; }
+    .wrapper section .topcoat-switch {
+      position: relative;
+      display: inline-block;
+      padding: 0 1.25rem;
+      border-radius: 3px;
+      border: 1px solid #a5a8a8;
+      overflow: hidden;
+      width: 109px;
+      z-index: 1;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+      margin-top: 25px;
+      margin-bottom: 0; }
+    .wrapper section .topcoat-switch__input {
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      margin: 0;
+      padding: 0;
+      border: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.1)";
+      filter: alpha(opacity=0.1);
+      opacity: 0.001; }
+    .wrapper section .topcoat-switch__toggle, .wrapper section .button {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      padding: 0;
+      margin: 0;
+      font: inherit;
+      color: inherit;
+      background: transparent;
+      border: none;
+      cursor: default;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-background-clip: padding-box;
+      -moz-background-clip: padding-box;
+      background-clip: padding-box;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -o-text-overflow: ellipsis;
+      -ms-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .wrapper section .topcoat-switch__toggle {
+      line-height: 3rem;
+      height: 32px;
+      width: 2rem;
+      color: #454545;
+      text-shadow: 0 1px #fff;
+      background-color: #fff;
+      border: 1px solid #a5a8a8;
+      margin-left: -1.3rem;
+      margin-bottom: -1px;
+      margin-top: -1px;
+      -webkit-box-shadow: inset 0 1px #fff;
+      box-shadow: inset 0 1px #fff;
+      -webkit-transition: margin-left 0.2s ease-in-out;
+      -moz-transition: margin-left 0.2s ease-in-out;
+      -o-transition: margin-left 0.2s ease-in-out;
+      -ms-transition: margin-left 0.2s ease-in-out;
+      transition: margin-left 0.2s ease-in-out; }
+    .wrapper section .topcoat-switch__input:checked + .topcoat-switch__toggle {
+      margin-left: 56px; }
+    .wrapper section .topcoat-switch__toggle:before,
+    .wrapper section .topcoat-switch__toggle:after {
+      position: absolute;
+      line-height: 32px;
+      height: 32px;
+      width: 94px;
+      z-index: -1;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box; }
+    .wrapper section .topcoat-switch__toggle:before {
+      content: 'PARCEL';
+      color: #fff;
+      background-color: #317cb4;
+      border-radius: 0;
+      right: 13px;
+      padding-left: 18px; }
+    .wrapper section .topcoat-switch__toggle:after {
+      content: 'PALLET';
+      background-color: #317cb4;
+      color: #ffffff;
+      left: 15px;
+      padding-left: 28px; }
+  .wrapper .buttons-row {
+    margin: 20px 0; }
+    .wrapper .buttons-row button:last-child {
+      float: right; }
 
 /*# sourceMappingURL=style.css.map */
