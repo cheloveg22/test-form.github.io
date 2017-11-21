@@ -14,38 +14,26 @@
 <body>
 <div class="container">
     <div class="wrapper">
-        <section class="main-package">
+        <section>
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="input-group">
-                        <div class="input-group-btn">
-                            <button type="button" class="btn btn-secondary dropdown-toggle"
-                                    data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">Belgium</button>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">France</a>
-                                <a href="#" class="dropdown-item">Germany</a>
-                                <a href="#" class="dropdown-item">United Kingdom</a>
-                            </div>
-                        </div>
-                        <input id="from-address" type="text" class="form-control" aria-label="Text input with dropdown button"
-                               placeholder="ZIP code, Address">
+                    <div class="select-box">
+                        <select name="sender-country" id="sender">
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="USA">USA</option>
+                            <option value="China">China</option>
+                        </select>
+                        <input id="sender-address" type="text" placeholder="ZIP code, Address">
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="input-group">
-                        <div class="input-group-btn">
-                            <button type="button" class="btn btn-secondary dropdown-toggle"
-                                    data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">Belgium</button>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">France</a>
-                                <a href="#" class="dropdown-item">Germany</a>
-                                <a href="#" class="dropdown-item">United Kingdom</a>
-                            </div>
-                        </div>
-                        <input id="to-address" type="text" class="form-control" aria-label="Text input with dropdown button"
-                               placeholder="ZIP code, Address">
+                    <div class="select-box">
+                        <select name="reciever-country" id="reciever">
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="USA">USA</option>
+                            <option value="China">China</option>
+                        </select>
+                        <input id="reciever-address" type="text" placeholder="ZIP code, Address">
                     </div>
                 </div>
             </div>

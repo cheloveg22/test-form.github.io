@@ -72,23 +72,20 @@ function deleteElement() {
     var container = document.getElementsByClassName("section-container");
     var section = document.getElementsByClassName('section');
     var lastChild = container[0].children[container[0].children.length - 1];
-    // container[0].removeChild(section[0]);
-    // console.log(container);
     container[0].removeChild(lastChild);
     console.log(lastChild);
 }
 
 function result() {
     var doc = document;
-    var main = doc.getElementsByClassName("main-package");
-    var addressFrom = doc.getElementById("from-address");
-    var addressTo = doc.getElementById("to-address");
-    var array = new Array;
-    array = main[0].children[1].children;
+    var senderCountry = doc.getElementById("sender");
+    var senderAddress = doc.getElementById("sender-address");
+    var recieverCountry = doc.getElementById("reciever");
+    var recieverAddress = doc.getElementById("reciever-address");
+    var packages = doc.querySelectorAll("section");
 
+    console.log("The sender address: " + senderCountry.value + ", " + senderAddress.value);
+    console.log("The reciever address: " + recieverCountry.value + ", " + recieverAddress.value);
 
-    console.log(array);
-    // console.log(main);
-    // console.log("Sender address: " + addressFrom.value + ";");
-    // console.log("Delivery address: " + addressTo.value + ";");
+    console.log(packages);
 }

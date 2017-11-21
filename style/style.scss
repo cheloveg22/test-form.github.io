@@ -15,6 +15,37 @@ body {
     box-shadow: 0 12px 21px -9px rgba(0, 0, 0, 0.75);
     font-size: 12px;
 
+    .select-box {
+      font-size: 0;
+
+      select {
+        position: relative;
+        background-color: #00aad6;
+        color: white;
+        border: none;
+        padding: 9px 18px;
+        //-webkit-appearance: none;
+        font-size: 14px;
+        border-radius: 3px 0 0 3px;
+
+        option {
+          padding: 5px;
+        }
+      }
+
+      input {
+        font-size: 14px;
+        line-height: 32px;
+        padding-left: 10px;
+        width: 78%;
+        border: none;
+        border-radius: 0 3px 3px 0;
+        border-top: 1px solid #cccccc;
+        border-right: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+      }
+    }
+
     .parcel-property {
       display: none;
     }
@@ -142,7 +173,6 @@ body {
       color: #fff;
       background-color: #317cb4;
       border-radius: 0;
-      //top: -5px;
       right: 13px;
       padding-left: 18px;
     }
@@ -151,7 +181,6 @@ body {
       content: 'PALLET';
       background-color: #317cb4;
       color: #ffffff;
-      //top: -5px;
       left: 15px;
       padding-left: 28px;
     }

@@ -12,6 +12,28 @@ body {
     -moz-box-shadow: 0 12px 21px -9px rgba(0, 0, 0, 0.75);
     box-shadow: 0 12px 21px -9px rgba(0, 0, 0, 0.75);
     font-size: 12px; }
+    .wrapper section .select-box {
+      font-size: 0; }
+      .wrapper section .select-box select {
+        position: relative;
+        background-color: #00aad6;
+        color: white;
+        border: none;
+        padding: 9px 18px;
+        font-size: 14px;
+        border-radius: 3px 0 0 3px; }
+        .wrapper section .select-box select option {
+          padding: 5px; }
+      .wrapper section .select-box input {
+        font-size: 14px;
+        line-height: 32px;
+        padding-left: 10px;
+        width: 78%;
+        border: none;
+        border-radius: 0 3px 3px 0;
+        border-top: 1px solid #cccccc;
+        border-right: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc; }
     .wrapper section .parcel-property {
       display: none; }
     .wrapper section .show {
