@@ -17,9 +17,13 @@ body {
 
     .select-box {
       font-size: 0;
+      position: relative;
+      margin-bottom: 20px;
 
       select {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
         background-color: #00aad6;
         color: white;
         border: none;
@@ -27,17 +31,13 @@ body {
         //-webkit-appearance: none;
         font-size: 14px;
         border-radius: 3px 0 0 3px;
-
-        option {
-          padding: 5px;
-        }
       }
 
       input {
         font-size: 14px;
         line-height: 32px;
-        padding-left: 10px;
-        width: 78%;
+        padding-left: 120px;
+        width: 100%;
         border: none;
         border-radius: 0 3px 3px 0;
         border-top: 1px solid #cccccc;
