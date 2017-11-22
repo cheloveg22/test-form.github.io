@@ -36,7 +36,7 @@ function addElement() {
     var parcellWidth = doc.createElement('div');
     var parcellHeight = doc.createElement('div');
 
-    row.className = "row";
+    row.className = "row inputs-row";
     switchBox.className = "col-lg-2 col-md-12";
     quantityBox.className = "col-lg-2 col-md-6 pallet-property";
     heightBox.className = "col-lg-2 col-md-6 pallet-property";
@@ -47,13 +47,13 @@ function addElement() {
     parcellHeight.className = "col-lg-2 col-md-6 parcel-property";
 
     switchBox.innerHTML = '<label class="topcoat-switch"><input type="checkbox" class="topcoat-switch__input" onchange="deliveryType(this)"><div class="topcoat-switch__toggle"></div></label>';
-    quantityBox.innerHTML = '<span>Number of pallets:</span><div class="input-group"><input type="text" class="form-control"><span class="input-group-addon">Pcs</span></div>';
-    heightBox.innerHTML = '<span>Height:</span><div class="input-group"><input type="text" class="form-control"><span class="input-group-addon">Cm</span></div>';
-    weightBox.innerHTML = '<span>Weight:</span><div class="input-group"><input type="text" class="form-control"><span class="input-group-addon">Kg</span></div>';
-    parcellWeight.innerHTML = '<span>Weight:</span><div class="input-group"><input type="text" class="form-control"><span class="input-group-addon">Kg</span></div>';
-    parcellLength.innerHTML = '<span>Length:</span><div class="input-group"><input type="text" class="form-control"><span class="input-group-addon">Cm</span></div>';
-    parcellWidth.innerHTML = '<span>Width:</span><div class="input-group"><input type="text" class="form-control"><span class="input-group-addon">Cm</span></div>';
-    parcellHeight.innerHTML = '<span>Height:</span><div class="input-group"><input type="text" class="form-control"><span class="input-group-addon">Cm</span></div>';
+    quantityBox.innerHTML = '<span>Number of pallets:</span><div class="input-group"><input type="text" class="form-control pallets-number"><span class="input-group-addon">Pcs</span></div>';
+    heightBox.innerHTML = '<span>Height:</span><div class="input-group"><input type="text" class="form-control pallet-height"><span class="input-group-addon">Cm</span></div>';
+    weightBox.innerHTML = '<span>Weight:</span><div class="input-group"><input type="text" class="form-control pallet-weight"><span class="input-group-addon">Kg</span></div>';
+    parcellWeight.innerHTML = '<span>Weight:</span><div class="input-group"><input type="text" class="form-control parcel-weight"><span class="input-group-addon">Kg</span></div>';
+    parcellLength.innerHTML = '<span>Length:</span><div class="input-group"><input type="text" class="form-control parcel-length"><span class="input-group-addon">Cm</span></div>';
+    parcellWidth.innerHTML = '<span>Width:</span><div class="input-group"><input type="text" class="form-control parcel-width"><span class="input-group-addon">Cm</span></div>';
+    parcellHeight.innerHTML = '<span>Height:</span><div class="input-group"><input type="text" class="form-control parcel-height"><span class="input-group-addon">Cm</span></div>';
 
     row.appendChild(switchBox);
     row.appendChild(quantityBox);
@@ -86,6 +86,29 @@ function result() {
 
     console.log("The sender address: " + senderCountry.value + ", " + senderAddress.value);
     console.log("The reciever address: " + recieverCountry.value + ", " + recieverAddress.value);
+    console.log("The quantity of packages: " + packages.length);
 
-    console.log(packages);
+    for (i = 0; i < packages.length; i++) {
+        var condition = packages[i].getElementsByClassName('topcoat-switch__input')[0];
+        var pallet = {};
+        var parcel = {};
+
+        pallet.number = packages[i].getElementsByClassName('pallets-number')[0].value;
+        pallet.height = packages[i].getElementsByClassName('pallet-height')[0].value;
+        pallet.weight = packages[i].getElementsByClassName('pallet-weight')[0].value;
+
+        parcel.weight = packages[i].getElementsByClassName('parcel-weight')[0].value;
+        parcel.length = packages[i].getElementsByClassName('parcel-length')[0].value;
+        parcel.width = packages[i].getElementsByClassName('parcel-width')[0].value;
+        parcel.height = packages[i].getElementsByClassName('parcel-height')[0].value;
+
+        // console.log(condition[0].checked);
+        if (condition.checked) {
+            console.log("Package type : parcel");
+            console.log(parcel);
+        } else {
+            console.log("Package type : pallet");
+            console.log(pallet);
+        }
+    }
 }

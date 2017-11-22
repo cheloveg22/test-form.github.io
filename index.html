@@ -37,72 +37,70 @@
                     </div>
                 </div>
             </div>
-            <form action="">
-                <div class="row">
-                    <div class="col-lg-2 col-md-12">
-                        <label class="topcoat-switch">
-                            <input id="main-checkbox"
-                                   type="checkbox" class="topcoat-switch__input" onchange="deliveryType(this)">
-                            <div class="topcoat-switch__toggle"></div>
-                        </label>
-                    </div>
-                    <div class="col-lg-2 col-md-6 pallet-property">
-                        <span>Number of pallets:</span>
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <span class="input-group-addon">Pcs</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 pallet-property">
-                        <span>Height:</span>
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <span class="input-group-addon">Cm</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 pallet-property">
-                        <span>Weight for pallet:</span>
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <span class="input-group-addon">Kg</span>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 parcel-property">
-                        <span>Weight:</span>
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <span class="input-group-addon">Kg</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 parcel-property">
-                        <span>Lenght:</span>
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <span class="input-group-addon">Cm</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 parcel-property">
-                        <span>Width:</span>
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <span class="input-group-addon">Cm</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 parcel-property">
-                        <span>Height:</span>
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <span class="input-group-addon">Cm</span>
-                        </div>
+            <div class="row inputs-row">
+                <div class="col-lg-2 col-md-12">
+                    <label class="topcoat-switch">
+                        <input id="main-checkbox"
+                               type="checkbox" class="topcoat-switch__input" onchange="deliveryType(this)">
+                        <div class="topcoat-switch__toggle"></div>
+                    </label>
+                </div>
+                <div class="col-lg-2 col-md-6 pallet-property">
+                    <span>Number of pallets:</span>
+                    <div class="input-group">
+                        <input type="text" class="form-control pallets-number">
+                        <span class="input-group-addon">Pcs</span>
                     </div>
                 </div>
-            </form>
+                <div class="col-lg-2 col-md-6 pallet-property">
+                    <span>Height:</span>
+                    <div class="input-group">
+                        <input type="text" class="form-control pallet-height">
+                        <span class="input-group-addon">Cm</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 pallet-property">
+                    <span>Weight for pallet:</span>
+                    <div class="input-group">
+                        <input type="text" class="form-control pallet-weight">
+                        <span class="input-group-addon">Kg</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 parcel-property">
+                    <span>Weight:</span>
+                    <div class="input-group">
+                        <input type="text" class="form-control parcel-weight">
+                        <span class="input-group-addon">Kg</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 parcel-property">
+                    <span>Length:</span>
+                    <div class="input-group">
+                        <input type="text" class="form-control parcel-length">
+                        <span class="input-group-addon">Cm</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 parcel-property">
+                    <span>Width:</span>
+                    <div class="input-group">
+                        <input type="text" class="form-control parcel-width">
+                        <span class="input-group-addon">Cm</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 parcel-property">
+                    <span>Height:</span>
+                    <div class="input-group">
+                        <input type="text" class="form-control parcel-height">
+                        <span class="input-group-addon">Cm</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <div class="section-container">
             <section class="section">
-                <div class="row">
+                <div class="row inputs-row">
                     <div class="col-lg-2 col-md-12">
                         <label class="topcoat-switch">
                             <input type="checkbox" class="topcoat-switch__input" onchange="deliveryType(this)">
@@ -112,21 +110,21 @@
                     <div class="col-lg-2 col-md-6 pallet-property">
                         <span>Number of pallets:</span>
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control pallets-number">
                             <span class="input-group-addon">Pcs</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 pallet-property">
                         <span>Height:</span>
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control pallet-height">
                             <span class="input-group-addon">Cm</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 pallet-property">
                         <span>Weight for pallet:</span>
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control pallet-weight">
                             <span class="input-group-addon">Kg</span>
                         </div>
                     </div>
@@ -134,35 +132,35 @@
                     <div class="col-lg-2 col-md-6 parcel-property">
                         <span>Weight:</span>
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control parcel-weight">
                             <span class="input-group-addon">Kg</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 parcel-property">
-                        <span>Lenght:</span>
+                        <span>Length:</span>
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control parcel-length">
                             <span class="input-group-addon">Cm</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 parcel-property">
                         <span>Width:</span>
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control parcel-width">
                             <span class="input-group-addon">Cm</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 parcel-property">
                         <span>Height:</span>
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control parcel-height">
                             <span class="input-group-addon">Cm</span>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="section">
-                <div class="row">
+                <div class="row inputs-row">
                     <div class="col-lg-2 col-md-12">
                         <label class="topcoat-switch">
                             <input type="checkbox" class="topcoat-switch__input" onchange="deliveryType(this)">
@@ -172,21 +170,21 @@
                     <div class="col-lg-2 col-md-6 pallet-property">
                         <span>Number of pallets:</span>
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control pallets-number">
                             <span class="input-group-addon">Pcs</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 pallet-property">
                         <span>Height:</span>
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control pallet-height">
                             <span class="input-group-addon">Cm</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 pallet-property">
                         <span>Weight for pallet:</span>
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control pallet-weight">
                             <span class="input-group-addon">Kg</span>
                         </div>
                     </div>
@@ -194,28 +192,28 @@
                     <div class="col-lg-2 col-md-6 parcel-property">
                         <span>Weight:</span>
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control parcel-weight">
                             <span class="input-group-addon">Kg</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 parcel-property">
                         <span>Lenght:</span>
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control parcel-length">
                             <span class="input-group-addon">Cm</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 parcel-property">
                         <span>Width:</span>
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control parcel-width">
                             <span class="input-group-addon">Cm</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 parcel-property">
                         <span>Height:</span>
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control parcel-height">
                             <span class="input-group-addon">Cm</span>
                         </div>
                     </div>
